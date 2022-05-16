@@ -26,8 +26,9 @@ function NewArticle() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form)
           })
-          .then(() => {
+          .then((msg) => {
             navigate("/");
+            console.log(msg)
           })
           .catch(error => console.log(error))
     }
