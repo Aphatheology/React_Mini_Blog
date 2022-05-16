@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Tools Used in this Project",
+      "author": "Aphatheology",
+      "body": "React\nTailwindCSS\nJson Server",
+      "id": 3
+    },
+    {
+      "title": "Deployed using Vercel",
+      "author": "Aphatheology",
+      "body": "Testing if adding of new article to database is working after deploying to Vercel",
+      "id": 4
+    }
+  ]
+}
