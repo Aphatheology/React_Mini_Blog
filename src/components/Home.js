@@ -2,7 +2,7 @@ import Article from "./Article";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const {fetchData: articles, isLoading, error} = useFetch("http://localhost:8000/blogs", 400)
+    const {fetchData: articles, isLoading, error} = useFetch("https://my-json-server.typicode.com/Aphatheology/React_Mini_Blog/blogs", 400)
 
     // const handleDelete = (id) => {
     //     // const newFetchData = articles.filter(article => article.id !== id);

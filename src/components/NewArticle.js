@@ -21,7 +21,7 @@ function NewArticle() {
 
     function handleFormSubmit(e) {
         e.preventDefault();
-        fetch('http://localhost:8000/blogs/', {
+        fetch('https://my-json-server.typicode.com/Aphatheology/React_Mini_Blog/blogs/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form)

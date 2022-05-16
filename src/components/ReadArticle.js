@@ -4,11 +4,11 @@ import useFetch from "./useFetch"
 
 function ReadArticle() {
     const {id} = useParams()
-    const {fetchData: articles, isLoading, error} = useFetch(`http://localhost:8000/blogs/${id}`, 100);
+    const {fetchData: articles, isLoading, error} = useFetch(`https://my-json-server.typicode.com/Aphatheology/React_Mini_Blog/blogs/${id}`, 100);
     const navigate = useNavigate();
 
     function handleDelete() {
-        fetch(`http://localhost:8000/blogs/${id}`, {
+        fetch(`https://my-json-server.typicode.com/Aphatheology/React_Mini_Blog/blogs/${id}`, {
             method: "DELETE"
         }).then(() => navigate("/"))
     }
